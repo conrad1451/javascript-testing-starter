@@ -15,4 +15,28 @@ describe("max", () => {
     // Assert:
     expect(result).toBe(2);
   });
+
+  it("should return the second argument if it is greater", () => {
+    // Arrange:
+    const a = 2;
+    const b = 11;
+
+    // Act:
+    const result = myMax(a, b);
+
+    // Assert:
+    expect(result).toBe(11);
+  });
+
+  it("should return the first argument if arguments are equal", () => {
+    // Arrange:
+    const a = 2;
+    const b = 2;
+
+    // Act:
+    const result = myMax(a, b);
+
+    // Assert:
+    expect(result).toBe(2);
+  });
 });
